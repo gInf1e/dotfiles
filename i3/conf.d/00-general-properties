@@ -1,0 +1,33 @@
+#########################################################
+# General properties section
+#########################################################
+
+# Mod key(s) setting
+set $mod Mod4
+
+# General font setting
+font pango:Ubuntu Light 10
+
+# Disabled headings (comment if don't needed)
+new_window 1pixel
+
+# Setting up floating (^_^)
+floating_modifier $mod
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+
+# Terminal/dmenu start bindings
+# Altenatively call original dmenu or any other program launcher
+bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# KILLER binding (remember, it kills only focused window ^_^)
+bindsym $mod+Shift+q kill
+
+# Config manipulation (native)
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+
+# Exit shortcut (native) 
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3?' -b 'Yes, exit i3' 'i3-msg exit'"
+
