@@ -1,0 +1,23 @@
+# Workspaces Section #################################
+# Manjaro version of workspace (tag in awesome) bindings
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+# ...etc
+# You can define different names of workspaces (tags) e.g.
+bindsym $mod+6 workspace PIM
+
+# Movement between workspaces (do not forget use the same names for it)
+bindsym $mod+Shift+1 move container to workspace 1; workspace 1
+bindsym $mod+Shift+2 move container to workspace 2; workspace 2
+bindsym $mod+Shift+3 move container to workspace 3; workspace 3
+bindsym $mod+Shift+4 move container to workspace 4; workspace 4
+bindsym $mod+Shift+5 move container to workspace 5; workspace 5
+# With names syntax is (e.g.)
+bindsym $mod+Shift+6 move container to workspace PIM; workspace PIM
+
+# Cycle workspaces bindings (sometimes helps, when uncarefully editing config files)
+# bindsym $mod+Tab workspace next
+# bindsym $mod+Shift+Tab workspace prev

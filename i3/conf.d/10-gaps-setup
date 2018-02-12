@@ -1,0 +1,4 @@
+# Gaps set-up
+gaps inner 10
+gaps outer 0
+smart_gaps on

@@ -1,0 +1,22 @@
+# Media keys section ###########################################
+# If you want ALSA controls -- google for it =)
+
+# PA controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sinc-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+
+# Brightness controls
+# there also exist a version with acpi_backlight -- maybe I add that later
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+
+# Media player keys (require playerctl)
+# Works not with all players, so if you have universal solution -- you can suggest it on GitHub
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+# There is a lot of options -- I have mentioned the most common of it 
+# You are free to suggest

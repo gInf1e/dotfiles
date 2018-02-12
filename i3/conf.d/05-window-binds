@@ -1,0 +1,37 @@
+# Setting $mod key as $wmkey -- for changes (two modkeys better than one)
+# Comment if $wmmod is enabled in 00 section
+set $wmmod $mod
+
+# Focus management
+bindsym $wmmod+j focus left
+bindsym $wmmod+k focus down
+bindsym $wmmod+l focus up
+bindsym $wmmod+semicolon focus right
+# And with cursor keys
+bindsym $wmmod+Left focus left
+bindsym $wmmod+Down focus down
+bindsym $wmmod+Up focus up
+bindsym $wmmod+Right focus right
+
+# Move focused container
+bindsym $wmmod+Shift+j move left
+bindsym $wmmod+Shift+k move down
+bindsym $wmmod+Shift+l move up
+bindsym $wmmod+Shift+semicolon move right
+# And with cursor keys
+bindsym $wmmod+Shift+Left move left
+bindsym $wmmod+Shift+Down move down
+bindsym $wmmod+Shift+Up move up
+bindsym $wmmod+Shift+Right move right
+
+# Container split binds
+bindsym $wmmod+h split h
+bindsym $wmmod+v split v
+
+# Fullscreen (toggle!) bind
+bindsym $wmmod+f fullscreen toggle
+
+# Container layout binds
+bindsym $wmmod+s layout stacking
+bindsym $wmmod+w layout tabbed
+bindsym $wmmod+e layout toggle split
