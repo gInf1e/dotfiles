@@ -1,0 +1,14 @@
+# Autostart section #########################
+# You may invoke something in different files, there is just autorun in general (nitrogen, applets, user-space daemons)
+
+# Wallpaper setup (does not breaks lightdm wallpaper, stay tuned)
+exec nitrogen --restore &
+
+# Network applet (quite useful)
+exec nm-applet &
+
+# Keyboard setup
+exec setxkbmap us,ru -option grp:alt_shift_toggle &
+
+# Terminal daemon (doesn't set up properly yet)
+# exec urxvtd --quiet --opendisplay --fork &

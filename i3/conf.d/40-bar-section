@@ -1,0 +1,7 @@
+# Bar section ###################
+# I use i3status... for now
+bar {
+	position top
+	status_command i3status
+}
+
