@@ -1,6 +1,6 @@
 # Setting $mod key as $wmkey -- for changes (two modkeys better than one)
 # Comment if $wmmod is enabled in 00 section
-set $wmmod $mod
+set $wmmod Mod4
 
 # Focus management
 bindsym $wmmod+j focus left
