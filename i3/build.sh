@@ -1,11 +1,9 @@
 #!/bin/bash
 # Inf1e's build file, you may need personal edit
 
-# Clean conf.d, if exists
-if [ -d "~/.config/i3/conf.d" ]; then
-	rm ~/.config/i3/conf.d/*
-	echo "Cleaned conf.d"
-fi
+# Clean conf.d
+rm ~/.config/i3/conf.d/*
+echo "Cleaned conf.d"
 
 # Copy config files from cloned repository
 cp ./conf.d/* ~/.config/i3/conf.d/
